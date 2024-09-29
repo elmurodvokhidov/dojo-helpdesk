@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./dojo-logo.png";
+import LogoutBtn from "./LogoutBtn";
 
 export default function Navbar({ user }) {
     return (
@@ -14,8 +15,10 @@ export default function Navbar({ user }) {
             />
             <h1>Dojo Helpdesk</h1>
             <Link href="/">Dashboard</Link>
-            <Link href="/tickets">Tickets</Link>
+            <Link href="/tickets" className="mr-auto">Tickets</Link>
+
             {user && <span>Hello, {user.email}</span>}
+            <LogoutBtn />
         </nav>
     )
 }
