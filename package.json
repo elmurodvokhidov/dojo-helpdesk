@@ -11,6 +11,7 @@
   "dependencies": {
     "@supabase/auth-helpers-nextjs": "^0.10.0",
     "@supabase/supabase-js": "^2.45.4",
+    "encoding": "^0.1.13",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18"
